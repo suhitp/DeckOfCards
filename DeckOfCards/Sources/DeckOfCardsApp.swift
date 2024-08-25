@@ -11,7 +11,7 @@ import SwiftUI
 struct DeckOfCardsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(numberOfPlayers: Constants.defaultPlayers)
         }
     }
 }

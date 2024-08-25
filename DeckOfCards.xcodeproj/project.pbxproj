@@ -14,6 +14,15 @@
 		EC346E102C7B381E00057986 /* DeckOfCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC346E0F2C7B381E00057986 /* DeckOfCardsTests.swift */; };
 		EC346E1A2C7B381E00057986 /* DeckOfCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC346E192C7B381E00057986 /* DeckOfCardsUITests.swift */; };
 		EC346E1C2C7B381E00057986 /* DeckOfCardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC346E1B2C7B381E00057986 /* DeckOfCardsUITestsLaunchTests.swift */; };
+		EC374F992C7BA84200F6C80B /* DeckService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC374F982C7BA84200F6C80B /* DeckService.swift */; };
+		EC374F9B2C7BA86600F6C80B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC374F9A2C7BA86600F6C80B /* Card.swift */; };
+		EC374F9D2C7BA87300F6C80B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC374F9C2C7BA87300F6C80B /* Player.swift */; };
+		EC374F9F2C7BA8D800F6C80B /* DeckResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC374F9E2C7BA8D800F6C80B /* DeckResponse.swift */; };
+		EC374FA12C7BA93C00F6C80B /* DeckGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC374FA02C7BA93C00F6C80B /* DeckGameViewModel.swift */; };
+		EC374FA52C7BAB9800F6C80B /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = EC374FA42C7BAB9800F6C80B /* Networking */; };
+		EC374FAC2C7BC08200F6C80B /* DeckEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC374FAB2C7BC08200F6C80B /* DeckEndpoint.swift */; };
+		EC374FAE2C7BC15B00F6C80B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC374FAD2C7BC15B00F6C80B /* Constants.swift */; };
+		EC374FB02C7BC17B00F6C80B /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC374FAF2C7BC17B00F6C80B /* APIConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,15 @@
 		EC346E152C7B381E00057986 /* DeckOfCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeckOfCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC346E192C7B381E00057986 /* DeckOfCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckOfCardsUITests.swift; sourceTree = "<group>"; };
 		EC346E1B2C7B381E00057986 /* DeckOfCardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckOfCardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EC374F982C7BA84200F6C80B /* DeckService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckService.swift; sourceTree = "<group>"; };
+		EC374F9A2C7BA86600F6C80B /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		EC374F9C2C7BA87300F6C80B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		EC374F9E2C7BA8D800F6C80B /* DeckResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckResponse.swift; sourceTree = "<group>"; };
+		EC374FA02C7BA93C00F6C80B /* DeckGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckGameViewModel.swift; sourceTree = "<group>"; };
+		EC374FA22C7BAB8000F6C80B /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Networking; path = DeckOfCards/Networking/Networking; sourceTree = "<group>"; };
+		EC374FAB2C7BC08200F6C80B /* DeckEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckEndpoint.swift; sourceTree = "<group>"; };
+		EC374FAD2C7BC15B00F6C80B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EC374FAF2C7BC17B00F6C80B /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC374FA52C7BAB9800F6C80B /* Networking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,10 +93,12 @@
 		EC346DF22C7B381B00057986 = {
 			isa = PBXGroup;
 			children = (
+				EC374FA22C7BAB8000F6C80B /* Networking */,
 				EC346DFD2C7B381B00057986 /* DeckOfCards */,
 				EC346E0E2C7B381E00057986 /* DeckOfCardsTests */,
 				EC346E182C7B381E00057986 /* DeckOfCardsUITests */,
 				EC346DFC2C7B381B00057986 /* Products */,
+				EC374FA32C7BAB9800F6C80B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,8 +115,7 @@
 		EC346DFD2C7B381B00057986 /* DeckOfCards */ = {
 			isa = PBXGroup;
 			children = (
-				EC346DFE2C7B381B00057986 /* DeckOfCardsApp.swift */,
-				EC346E002C7B381B00057986 /* ContentView.swift */,
+				EC374FA92C7BB03C00F6C80B /* Sources */,
 				EC346E022C7B381E00057986 /* Assets.xcassets */,
 				EC346E042C7B381E00057986 /* Preview Content */,
 			);
@@ -127,6 +147,62 @@
 			path = DeckOfCardsUITests;
 			sourceTree = "<group>";
 		};
+		EC374FA32C7BAB9800F6C80B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC374FA62C7BB02000F6C80B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EC374F9E2C7BA8D800F6C80B /* DeckResponse.swift */,
+				EC374F982C7BA84200F6C80B /* DeckService.swift */,
+				EC374FAB2C7BC08200F6C80B /* DeckEndpoint.swift */,
+				EC374FAF2C7BC17B00F6C80B /* APIConstants.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EC374FA72C7BB02700F6C80B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC374F9C2C7BA87300F6C80B /* Player.swift */,
+				EC374F9A2C7BA86600F6C80B /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC374FA82C7BB02E00F6C80B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC374FA02C7BA93C00F6C80B /* DeckGameViewModel.swift */,
+				EC346E002C7B381B00057986 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EC374FA92C7BB03C00F6C80B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EC346DFE2C7B381B00057986 /* DeckOfCardsApp.swift */,
+				EC374FA62C7BB02000F6C80B /* Service */,
+				EC374FA72C7BB02700F6C80B /* Model */,
+				EC374FA82C7BB02E00F6C80B /* Views */,
+				EC374FAA2C7BC06900F6C80B /* Constants */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EC374FAA2C7BC06900F6C80B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				EC374FAD2C7BC15B00F6C80B /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +219,9 @@
 			dependencies = (
 			);
 			name = DeckOfCards;
+			packageProductDependencies = (
+				EC374FA42C7BAB9800F6C80B /* Networking */,
+			);
 			productName = DeckOfCards;
 			productReference = EC346DFB2C7B381B00057986 /* DeckOfCards.app */;
 			productType = "com.apple.product-type.application";
@@ -257,8 +336,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC374F992C7BA84200F6C80B /* DeckService.swift in Sources */,
+				EC374F9F2C7BA8D800F6C80B /* DeckResponse.swift in Sources */,
 				EC346E012C7B381B00057986 /* ContentView.swift in Sources */,
 				EC346DFF2C7B381B00057986 /* DeckOfCardsApp.swift in Sources */,
+				EC374F9D2C7BA87300F6C80B /* Player.swift in Sources */,
+				EC374FAC2C7BC08200F6C80B /* DeckEndpoint.swift in Sources */,
+				EC374FB02C7BC17B00F6C80B /* APIConstants.swift in Sources */,
+				EC374FA12C7BA93C00F6C80B /* DeckGameViewModel.swift in Sources */,
+				EC374F9B2C7BA86600F6C80B /* Card.swift in Sources */,
+				EC374FAE2C7BC15B00F6C80B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,11 +512,11 @@
 				DEVELOPMENT_TEAM = 32AJH6323X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.card-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,11 +541,11 @@
 				DEVELOPMENT_TEAM = 32AJH6323X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.card-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -588,6 +675,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC374FA42C7BAB9800F6C80B /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EC346DF32C7B381B00057986 /* Project object */;
 }

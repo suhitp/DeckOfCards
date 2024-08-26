@@ -41,22 +41,29 @@ struct ContentView: View {
     }
     
     var body: some View {
-        VStack {
-            Stepper("Number of Players: \(numberOfPlayers)", value: $numberOfPlayers, in: 2...4)
+        NavigationStack {
             
-            Button("Start Game") {
-                viewModel.startGame(numberOfPlayers: numberOfPlayers)
+            VStack(spacing: 16) {
+                
+                Stepper("Number of Players: \(numberOfPlayers)", value: $numberOfPlayers, in: 2...4)
+               
+                Button("Start Game") {
+                    viewModel.startGame(numberOfPlayers: numberOfPlayers)
+                }
+                .disabled(viewModel.isGameStarted)
+                
+                Button("Play Round") {
+                    viewModel.playRound()
+                }
+                .disabled(!viewModel.isGameStarted)
+                
+                List(viewModel.players) { player in
+                    Text("Player \(player.id): \(player.battlesWon) battles won")
+                }
             }
-            
-            Button("Play Round") {
-                viewModel.playRound()
-            }
-            
-            List(viewModel.players) { player in
-                Text("Player \(player.id): \(player.battlesWon) battles won")
-            }
+            .padding()
+            .navigationTitle("CardDeck Game")
         }
-        .padding()
     }
 }
 

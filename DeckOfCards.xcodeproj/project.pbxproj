@@ -23,6 +23,7 @@
 		EC374FAC2C7BC08200F6C80B /* DeckEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC374FAB2C7BC08200F6C80B /* DeckEndpoint.swift */; };
 		EC374FAE2C7BC15B00F6C80B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC374FAD2C7BC15B00F6C80B /* Constants.swift */; };
 		EC374FB02C7BC17B00F6C80B /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC374FAF2C7BC17B00F6C80B /* APIConstants.swift */; };
+		EC7B92362C7C971900636C80 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7B92352C7C971900636C80 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		EC374FAB2C7BC08200F6C80B /* DeckEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckEndpoint.swift; sourceTree = "<group>"; };
 		EC374FAD2C7BC15B00F6C80B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EC374FAF2C7BC17B00F6C80B /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		EC7B92352C7C971900636C80 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 		EC374FA82C7BB02E00F6C80B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EC7B92342C7C970B00636C80 /* CardView */,
 				EC374FA02C7BA93C00F6C80B /* DeckGameViewModel.swift */,
 				EC346E002C7B381B00057986 /* ContentView.swift */,
 			);
@@ -201,6 +204,14 @@
 				EC374FAD2C7BC15B00F6C80B /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		EC7B92342C7C970B00636C80 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				EC7B92352C7C971900636C80 /* CardView.swift */,
+			);
+			path = CardView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +356,7 @@
 				EC374FB02C7BC17B00F6C80B /* APIConstants.swift in Sources */,
 				EC374FA12C7BA93C00F6C80B /* DeckGameViewModel.swift in Sources */,
 				EC374F9B2C7BA86600F6C80B /* Card.swift in Sources */,
+				EC7B92362C7C971900636C80 /* CardView.swift in Sources */,
 				EC374FAE2C7BC15B00F6C80B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

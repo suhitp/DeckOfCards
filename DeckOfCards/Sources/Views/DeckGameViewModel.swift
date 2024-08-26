@@ -7,11 +7,14 @@
 
 import Foundation
 
-class DeckGameViewModel: ObservableObject {
+@MainActor
+final class DeckGameViewModel: ObservableObject {
     
     private var deckService: DeckAPIService
     @Published var players: [Player] = []
     @Published var winningPlayer: Player?
+    @Published var isGameStarted: Bool = false
+    @Published var deckError: String?
     
     init(deckService: DeckAPIService = DeckNetworkRepository()) {
         self.deckService = deckService
@@ -34,6 +37,7 @@ class DeckGameViewModel: ObservableObject {
         for (index, card) in cards.enumerated() {
             self.players[index % numberOfPlayers].pile.append(card)
         }
+        isGameStarted = true
     }
     
     // Function to play a round
